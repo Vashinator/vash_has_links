@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap");
+/*
+ RESET
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  font-family: "Fira Mono", monospace;
+  font-size: 1.25rem;
+}
+
+.main {
+  color: hsl(219, 17%, 77%);
+  background-color: hsl(220, 13%, 18%);
+  padding-inline: 2rem;
+}
+.main__ascii {
+  white-space: pre;
+  color: hsl(219, 17%, 77%);
+}
+.main__logo {
+  max-height: 10rem;
+}
+.main__link {
+  text-decoration: none;
+  color: hsl(0, 100%, 71%);
+}
+.main__p {
+  color: hsl(195, 36%, 51%);
+}
+.main__section {
+  margin-block: 0.5rem;
+}
+.main__line--mobile {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .main__ascii {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main__ascii {
+    display: none;
+  }
+  .main__line {
+    display: none;
+  }
+  .main__line--mobile {
+    display: inline;
+  }
+}/*# sourceMappingURL=style.css.map */

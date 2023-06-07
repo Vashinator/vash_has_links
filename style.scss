@@ -1,0 +1,83 @@
+@use "_reset";
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
+
+$ft-family: 'Fira Mono', monospace;
+$ft-400: 400;
+$ft-500: 500;
+$ft-700: 700;
+
+$clr-blue: hsl(215, 65%, 38%);
+$clr-bright-blue: hsl(204, 83%, 63%);
+$clr-red: hsl(0, 100%, 71%);
+$clr-gray: gray;
+$clr-black: hsl(220, 13%, 18%);
+$clr-white: hsl(219, 17%, 77%);
+$clr-dark-cyan: hsl(195, 36%, 51%);
+$clr-bright-syan: hsl(192, 100%, 64%);
+
+body {
+    font-family: $ft-family;
+    font-size: 1.25rem;
+}
+
+.main {
+    color: $clr-white;
+    background-color: $clr-black;
+    padding-inline: 2rem;
+    //height: 100vh;
+
+    &__ascii {
+        white-space: pre;
+        color: $clr-white;
+    }
+
+    &__logo {
+        max-height: 10rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $clr-red;
+    }
+
+    &__p {
+        color: $clr-dark-cyan;
+    }
+
+    &__section {
+        // border-bottom: 1px $clr-white dashed;
+        margin-block: .5rem;
+    }
+
+    &__line--mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .main {
+
+        &__ascii {
+            display: none;
+        }
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .main {
+
+        &__ascii {
+            display: none;
+        }
+
+        &__line {
+            display: none;
+        }
+
+        &__line--mobile {
+            display: inline
+        }
+    }
+
+}

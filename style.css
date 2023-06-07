@@ -56,26 +56,28 @@ h6 {
 body {
   font-family: "Fira Mono", monospace;
   font-size: 1.25rem;
+  background-color: hsl(220, 13%, 18%);
 }
 
 .main {
   color: hsl(219, 17%, 77%);
-  background-color: hsl(220, 13%, 18%);
   padding-inline: 2rem;
+  max-width: 85%;
+  margin-inline: auto;
 }
 .main__ascii {
   white-space: pre;
   color: hsl(219, 17%, 77%);
+  color: hsl(209, 90%, 64%);
 }
 .main__logo {
   max-height: 10rem;
 }
 .main__link {
-  text-decoration: none;
   color: hsl(0, 100%, 71%);
 }
 .main__p {
-  color: hsl(195, 36%, 51%);
+  color: hsl(209, 90%, 64%);
 }
 .main__section {
   margin-block: 0.5rem;

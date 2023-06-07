@@ -6,8 +6,9 @@ $ft-400: 400;
 $ft-500: 500;
 $ft-700: 700;
 
-$clr-blue: hsl(215, 65%, 38%);
+$clr-blue: hsl(209, 90%, 64%);
 $clr-bright-blue: hsl(204, 83%, 63%);
+$clr-red: hsl(356, 97%, 36%);
 $clr-red: hsl(0, 100%, 71%);
 $clr-gray: gray;
 $clr-black: hsl(220, 13%, 18%);
@@ -18,17 +19,20 @@ $clr-bright-syan: hsl(192, 100%, 64%);
 body {
     font-family: $ft-family;
     font-size: 1.25rem;
+    background-color: $clr-black;
 }
 
 .main {
     color: $clr-white;
-    background-color: $clr-black;
     padding-inline: 2rem;
+    max-width: 85%;
+    margin-inline: auto;
     //height: 100vh;
 
     &__ascii {
         white-space: pre;
         color: $clr-white;
+        color: $clr-blue;
     }
 
     &__logo {
@@ -36,12 +40,12 @@ body {
     }
 
     &__link {
-        text-decoration: none;
+        //text-decoration: none;
         color: $clr-red;
     }
 
     &__p {
-        color: $clr-dark-cyan;
+        color: $clr-blue;
     }
 
     &__section {
